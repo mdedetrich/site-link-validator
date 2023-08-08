@@ -2,7 +2,7 @@ package net.runne.sitelinkvalidator
 
 import java.nio.file.Path
 
-import akka.actor.typed.ActorRef
+import org.apache.pekko.actor.typed.ActorRef
 import org.jsoup.Jsoup
 import org.jsoup.nodes.Element
 

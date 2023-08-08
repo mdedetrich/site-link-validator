@@ -14,7 +14,7 @@
     </appender>
 
     <logger name="com.typesafe" level="WARN"/>
-    <logger name="akka" level="WARN"/>
+    <logger name="org.apache.pekko" level="WARN"/>
 
     <root level="INFO">
         <appender-ref ref="STDOUT" />

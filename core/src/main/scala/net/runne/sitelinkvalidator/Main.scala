@@ -2,9 +2,10 @@ package net.runne.sitelinkvalidator
 
 import java.nio.file.{ Path, Paths }
 
-import akka.actor.{ BootstrapSetup, CoordinatedShutdown }
-import akka.actor.typed.scaladsl.Behaviors
-import akka.actor.typed.{ ActorSystem, Behavior, Terminated }
+import org.apache.pekko
+import pekko.actor.{ BootstrapSetup, CoordinatedShutdown }
+import pekko.actor.typed.scaladsl.Behaviors
+import pekko.actor.typed.{ ActorSystem, Behavior, Terminated }
 import com.typesafe.config.{ Config, ConfigFactory }
 
 import scala.jdk.CollectionConverters._

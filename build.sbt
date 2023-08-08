@@ -1,7 +1,7 @@
 import sbt._
 
-val AkkaVersion = "2.6.20"
-val AkkaHttpVersion = "10.2.10"
+val PekkoVersion = "1.0.1"
+val PekkoHttpVersion = "1.0.0"
 
 lazy val `site-link-validator` = project.in(file(".")).aggregate(core).settings(publish / skip := true)
 
@@ -10,12 +10,12 @@ lazy val core = project.settings(
   run / javaOptions += "-Djavax.net.debug=ssl:handshake:verbose",
   libraryDependencies ++= Seq(
     "org.jsoup" % "jsoup" % "1.14.3",
-    "com.typesafe.akka" %% "akka-stream" % AkkaVersion,
-    "com.typesafe.akka" %% "akka-http" % AkkaHttpVersion,
-    "com.typesafe.akka" %% "akka-stream-testkit" % AkkaVersion % Test,
-    "com.typesafe.akka" %% "akka-stream-typed" % AkkaVersion,
-    "com.typesafe.akka" %% "akka-actor-typed" % AkkaVersion,
-    "com.typesafe.akka" %% "akka-slf4j" % AkkaVersion,
+    "org.apache.pekko" %% "pekko-stream" % PekkoVersion,
+    "org.apache.pekko" %% "pekko-http" % PekkoHttpVersion,
+    "org.apache.pekko" %% "pekko-stream-testkit" % PekkoVersion % Test,
+    "org.apache.pekko" %% "pekko-stream-typed" % PekkoVersion,
+    "org.apache.pekko" %% "pekko-actor-typed" % PekkoVersion,
+    "org.apache.pekko" %% "pekko-slf4j" % PekkoVersion,
     "ch.qos.logback" % "logback-classic" % "1.2.11"))
 
 inThisBuild(
