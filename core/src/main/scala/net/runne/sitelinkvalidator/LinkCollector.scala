@@ -2,11 +2,12 @@ package net.runne.sitelinkvalidator
 
 import java.nio.file.{ Path, Paths }
 
-import akka.NotUsed
-import akka.actor.typed.{ ActorRef, ActorSystem }
-import akka.stream.OverflowStrategy
-import akka.stream.scaladsl.{ Flow, Sink }
-import akka.stream.typed.scaladsl.ActorSource
+import org.apache.pekko
+import pekko.NotUsed
+import pekko.actor.typed.{ ActorRef, ActorSystem }
+import pekko.stream.OverflowStrategy
+import pekko.stream.scaladsl.{ Flow, Sink }
+import pekko.stream.typed.scaladsl.ActorSource
 
 import scala.concurrent.Promise
 import scala.concurrent.duration._

@@ -2,8 +2,9 @@ package net.runne.sitelinkvalidator
 
 import java.nio.file.Path
 
-import akka.actor.typed.{ ActorRef, Behavior }
-import akka.actor.typed.scaladsl.Behaviors
+import org.apache.pekko
+import pekko.actor.typed.{ ActorRef, Behavior }
+import pekko.actor.typed.scaladsl.Behaviors
 
 import scala.collection.immutable
 import scala.util.matching.Regex

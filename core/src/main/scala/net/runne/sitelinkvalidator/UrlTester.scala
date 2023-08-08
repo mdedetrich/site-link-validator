@@ -1,12 +1,13 @@
 package net.runne.sitelinkvalidator
 
-import akka.actor.typed.scaladsl.Behaviors
-import akka.actor.typed.{ ActorRef, ActorSystem, Behavior }
-import akka.http.scaladsl.Http
-import akka.http.scaladsl.model._
-import akka.http.scaladsl.model.headers.Location
-import akka.stream.OverflowStrategy
-import akka.stream.typed.scaladsl.{ ActorSink, ActorSource }
+import org.apache.pekko
+import pekko.actor.typed.scaladsl.Behaviors
+import pekko.actor.typed.{ ActorRef, ActorSystem, Behavior }
+import pekko.http.scaladsl.Http
+import pekko.http.scaladsl.model._
+import pekko.http.scaladsl.model.headers.Location
+import pekko.stream.OverflowStrategy
+import pekko.stream.typed.scaladsl.{ ActorSink, ActorSource }
 import java.nio.file.Path
 import scala.util.{ Failure, Success }
 
