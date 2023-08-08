@@ -1,4 +1,4 @@
-package net.runne.sitelinkvalidator
+package org.mdedetrich.sitelinkvalidator
 
 import org.apache.pekko
 import pekko.actor.typed.scaladsl.Behaviors

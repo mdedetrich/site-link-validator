@@ -1,4 +1,4 @@
-package net.runne.sitelinkvalidator.sbtplugin
+package org.mdedetrich.sitelinkvalidator.sbtplugin
 
 import sbt.{ inputKey, settingKey, taskKey, File }
 

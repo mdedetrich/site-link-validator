@@ -1,6 +1,6 @@
-package net.runne.sitelinkvalidator.sbtplugin
+package org.mdedetrich.sitelinkvalidator.sbtplugin
 
-import net.runne.sitelinkvalidator.Main
+import org.mdedetrich.sitelinkvalidator.Main
 
 import sbt._
 import sbt.Keys._
