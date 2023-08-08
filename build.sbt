@@ -20,17 +20,25 @@ lazy val core = project.settings(
 
 inThisBuild(
   Seq(
-    organization := "net.runne",
-    organizationHomepage := Some(url("https://github.com/ennru/")),
+    organization := "org.mdedetrich",
+    organizationHomepage := Some(url("https://github.com/mdedetrich/")),
     licenses += ("Apache-2.0", url("https://www.apache.org/licenses/LICENSE-2.0")),
-    homepage := Some(url("https://github.com/ennru/site-link-validator")),
+    homepage := Some(url("https://github.com/mdedetrich/site-link-validator")),
     scmInfo := Some(
-      ScmInfo(url("https://github.com/ennru/site-link-validator"), "git@github.com:ennru/site-link-validator.git")),
-    developers += Developer(
-      "contributors",
-      "Contributors",
-      "https://github.com/ennru/site-link-validator/graphs/contributors",
-      url("https://github.com/ennru/site-link-validator/graphs/contributors")),
+      ScmInfo(
+        url("https://github.com/mdedetrich/site-link-validator"),
+        "git@github.com:mdedetrich/site-link-validator.git")),
+    developers ++= List(
+      Developer(
+        "contributors",
+        "Contributors",
+        "https://github.com/ennru/site-link-validator/graphs/contributors",
+        url("https://github.com/ennru/site-link-validator/graphs/contributors")),
+      Developer(
+        "contributors",
+        "Contributors",
+        "https://github.com/mdedetrich/site-link-validator/graphs/contributors",
+        url("https://github.com/mdedetrich/site-link-validator/graphs/contributors"))),
     scalafmtOnCompile := true,
     Test / testOptions += Tests.Argument("-oDF"),
     scalaVersion := "2.13.10",

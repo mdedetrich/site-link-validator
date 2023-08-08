@@ -1,4 +1,4 @@
-package net.runne.sitelinkvalidator
+package org.mdedetrich.sitelinkvalidator
 
 import java.nio.file.{ Path, Paths }
 
